@@ -9,7 +9,7 @@ var ctx = canvas.ctx;
 
 var world = new World(50, canvas, ctx);
 
-var player = world.Player(0, 6);
+var player = world.Player(0, 0);
 var controller = new Constroller(player);
 var camera = new Camera(player);
 canvas.setCamera(camera);

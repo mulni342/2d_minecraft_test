@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box;}
+        body {width: 100%; height: 100vh; overflow: hidden;}
+        canvas {
+            image-rendering: optimizeSpeed;             
+            image-rendering: -moz-crisp-edges;          
+            image-rendering: -webkit-optimize-contrast; 
+            image-rendering: -o-crisp-edges;            
+            image-rendering: crisp-edges;               
+            -ms-interpolation-mode: nearest-neighbor;   
+        }
+
+        .make_block {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: black;
+            padding: 20px;
+            color: white;
+        }
+
+        .make_block input {
+            width: 40px;
+        }
+
+    </style>
+</head>
+<body>  
+
+    <div class="make_block">
+<pre>
+<label for="">x:  </label><input id="x" type="number" value="0" placeholder="x">
+<label for="">y:  </label><input id="y" type="number" value="0" placeholder="y">
+<label for="">id: </label><input id="id" type="number" value="1" placeholder="id">
+<button onclick="create_block()" >Create Block</button>
+</pre>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
